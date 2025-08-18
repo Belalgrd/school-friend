@@ -1,0 +1,106 @@
+.path-selection {
+  background-color: #f8f9fa;
+  padding: 3rem 2rem;
+}
+
+.path-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.path-title {
+  font-size: 2.2rem;
+  color: #4a90e2;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.path-subtitle {
+  color: #888;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+.selection-section {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.btn-learn {
+  background: linear-gradient(45deg, #4a90e2, #5cb85c);
+  color: white;
+  padding: 0.8rem 2.5rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: all 0.3s;
+}
+
+.btn-learn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .path-selection {
+    padding: 2rem 1rem;
+  }
+  
+  .path-title {
+    font-size: 1.8rem;
+  }
+  
+  .path-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.1rem;
+  }
+  
+  .btn-learn {
+    padding: 0.7rem 2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .path-selection {
+    padding: 1.5rem 1rem;
+  }
+  
+  .path-title {
+    font-size: 1.5rem;
+  }
+  
+  .path-subtitle {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .selection-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 1rem;
+  }
+  
+  .btn-learn {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 1.5rem;
+  }
+}

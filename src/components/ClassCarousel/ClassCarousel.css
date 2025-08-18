@@ -1,0 +1,173 @@
+.class-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  position: relative;
+  padding: 0 1rem;
+}
+
+.carousel-btn {
+  background: linear-gradient(45deg, #7fb3d3, #5cb85c);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.carousel-btn:hover {
+  transform: scale(1.1);
+}
+
+.class-cards {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.class-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s;
+}
+
+.side-card {
+  width: 120px;
+  height: 150px;
+  opacity: 0.7;
+  filter: blur(1px);
+}
+
+.main-card {
+  width: 180px;
+  height: 220px;
+  border: 3px solid #4a90e2;
+  transform: scale(1.1);
+}
+
+.class-text {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.class-number {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.main-card .class-number {
+  font-size: 5rem;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: -2rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #4a90e2;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .class-carousel {
+    gap: 0.5rem;
+  }
+  
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  
+  .side-card {
+    width: 80px;
+    height: 100px;
+  }
+  
+  .main-card {
+    width: 120px;
+    height: 150px;
+  }
+  
+  .class-text {
+    font-size: 1rem;
+  }
+  
+  .class-number {
+    font-size: 2.5rem;
+  }
+  
+  .main-card .class-number {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .class-carousel {
+    gap: 0.3rem;
+    margin: 1rem 0;
+  }
+  
+  .carousel-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+  
+  .side-card {
+    width: 60px;
+    height: 80px;
+  }
+  
+  .main-card {
+    width: 100px;
+    height: 120px;
+    transform: scale(1.05);
+  }
+  
+  .class-text {
+    font-size: 0.8rem;
+  }
+  
+  .class-number {
+    font-size: 2rem;
+  }
+  
+  .main-card .class-number {
+    font-size: 2.5rem;
+  }
+  
+  .carousel-dots {
+    bottom: -1.5rem;
+  }
+}
