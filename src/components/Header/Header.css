@@ -176,3 +176,20 @@
     font-size: 0.7rem;
   }
 }
+
+/* Add these styles to the existing Header.css */
+.btn.active {
+  background: linear-gradient(45deg, #4a90e2, #357abd);
+  color: white;
+  transform: scale(1.05);
+}
+
+.logo {
+  cursor: pointer;
+}
+
+/* Mobile menu active state */
+.mobile-menu .btn.active {
+  background: linear-gradient(45deg, #4a90e2, #357abd);
+  color: white;
+}

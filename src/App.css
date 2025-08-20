@@ -45,3 +45,24 @@ img {
     min-width: 44px;
   }
 }
+
+
+/* Add these styles to App.css for body blur effect */
+body.modal-open {
+  overflow: hidden;
+}
+
+body.modal-open .page-content {
+  filter: blur(5px);
+  transition: filter 0.3s ease;
+}
+
+/* Prevent interaction with blurred background */
+body.modal-open .page-content * {
+  pointer-events: none;
+}
+
+/* Ensure smooth transitions */
+.page-content {
+  transition: filter 0.3s ease;
+}

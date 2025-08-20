@@ -1,0 +1,378 @@
+.rewards-page {
+  min-height: 100vh;
+  background-color: #f5f7fa;
+}
+
+.rewards-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.rewards-container {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.rewards-title {
+  font-size: 2.5rem;
+  color: #4a69bd;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.rewards-subtitle {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Learning Streak Section */
+.learning-streak-section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: #4a90e2;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #7f8c8d;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.stats-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.streak-card {
+  background: #ffe4b5;
+}
+
+.xp-card {
+  background: #98fb98;
+}
+
+.badges-card {
+  background: #ffd700;
+}
+
+.stat-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.stat-card h3 {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Achievement Certificate Section */
+.achievement-section {
+  margin-bottom: 3rem;
+}
+
+.certificate {
+  background: linear-gradient(135deg, #667eea 0%, #4ecdc4 100%);
+  color: white;
+  padding: 3rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.certificate::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.certificate-crown {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.certificate h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.certificate-text {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+.certificate-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.certificate-from {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+}
+
+.certificate-school {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.certificate-achievement {
+  font-size: 1.1rem;
+  margin: 1.5rem 0;
+  opacity: 0.95;
+}
+
+.certificate-date {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 2rem;
+}
+
+/* Win Streak Section */
+.win-streak-section {
+  margin-bottom: 3rem;
+}
+
+.streak-title {
+  font-size: 1.8rem;
+  color: #ff6b6b;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.streak-days {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.streak-day-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.streak-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  background: #e0e0e0;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.streak-circle.completed {
+  background: #4CAF50;
+  color: white;
+}
+
+.day-label {
+  font-size: 0.9rem;
+  color: #4a90e2;
+  font-weight: 500;
+}
+
+/* Badges Section */
+.badges-section {
+  margin-top: 3rem;
+}
+
+.badges-title {
+  font-size: 1.8rem;
+  color: #ffa500;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.badges-subtitle {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+}
+
+.badges-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.badge-item {
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.badge-item.earned {
+  background: #4CAF50;
+  color: white;
+}
+
+.badge-item.locked {
+  background: #e0e0e0;
+  color: #999;
+}
+
+.badge-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.badge-icon {
+  font-size: 1.2rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .rewards-content {
+    padding: 1rem;
+  }
+  
+  .rewards-container {
+    padding: 2rem 1.5rem;
+  }
+  
+  .rewards-title {
+    font-size: 2rem;
+  }
+  
+  .stats-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .certificate {
+    padding: 2rem;
+  }
+  
+  .certificate-name {
+    font-size: 2rem;
+  }
+  
+  .streak-days {
+    gap: 1rem;
+  }
+  
+  .streak-circle {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .badges-grid {
+    gap: 0.8rem;
+  }
+  
+    .badge-item {
+    font-size: 0.85rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .rewards-title {
+    font-size: 1.6rem;
+  }
+  
+  .rewards-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .stat-card {
+    padding: 1.5rem;
+  }
+  
+  .stat-value {
+    font-size: 2rem;
+  }
+  
+  .certificate h2 {
+    font-size: 1.5rem;
+  }
+  
+  .certificate-name {
+    font-size: 1.6rem;
+  }
+  
+  .certificate-school {
+    font-size: 1.1rem;
+  }
+  
+  .streak-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  
+  .day-label {
+    font-size: 0.8rem;
+  }
+}
